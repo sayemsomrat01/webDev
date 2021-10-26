@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+p{
+    color: rgb(89, 165, 216);
+    margin: 20px 10px;
+}
+hr{
+    border-bottom: 5px solid rgb(89, 165, 216);
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+h2{
+    color: rgb(89, 165, 216);
+    text-align: center;
+    padding: 10px;
+}
+body{
+    background-image: url("/img/bg3.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    background: transparent;
+    width: 100%;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin-bottom: 0%;
+    padding: 25px;
+    font-size: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    color:white;
+}
+.search input{
+    float: right;
+    margin: 25px 30px;
+    width: 5%;
+}
+.navbar input{
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.drop-down{
+    display: none;
+}
+.navbar ul li a:hover{
+    color: lightgreen;
+}
+.navbar ul li:hover .drop-down{
+    display: block;
+    position: absolute;
+
+}
+.navbar ul li:hover .drop-down ul{
+    display: block;
+    position: absolute;
+    color: aliceblue;
+}
+.navbar ul li:hover .drop-down ul li{
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 0%;
+}
+.navbar ul li:hover .drop-down ul li a:hover{
+    color: rgb(89, 165, 216);
+}
+.login-form{
+
+    top: 30%;
+    left: 40%;
+    position: absolute;
+    /*border: 2px black solid;*/
+    height: 450px;
+    width: 350px;
+}
+.form-input {
+    transition: 00.75s;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    height: 40px;
+    width: 40%;
+    border-radius: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 1px rgb(128, 238, 94) solid;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 17px;
+    margin: 15px 125px;
+    outline: none;
+    border: 1px rgb(89, 165, 216) solid;
+    background: transparent;
+    color: aliceblue;
+}
+button:hover{
+    background-color: rgb(89, 165, 216);
+    color: aliceblue;
+}
+
+.form-input:focus{
+    width: 90%;
+    transition: 0.75s;
+    border-radius: 0px;
+    outline: none;
+    border-bottom: 2px solid rgb(89, 165, 216);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+hr:hover{
+    width: 100%;
+    transition: 0.75s;
+}
+.search input:hover{
+    width: 25%;
+    transition: 0.5s;
+}
