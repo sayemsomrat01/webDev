@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&family=Zen+Kurenaido&display=swap');
+
+    body{
+        background-image: url(/back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    * {
+        margin: 0;
+        padding: 0%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        color: angore;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .container {
+        height: 300px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    #box-1 {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #box-1 p {
+        color: orange;
+        font-family: 'Beau Rivage', cursive;
+        font-family: 'Beau Rivage', cursive;
+    }
+
+    #box-2 {
+        /*background-image: url(/portfolio.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    #box-2 img {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 150px;
+    }
+    .contact-btn{
+        border: none;
+        height: 40px;
+        width: 110px;
+        background-color: skyblue;
+        color: azure;
+    }
+    .contact-btn:hover{
+        background-color: rgb(48, 123, 228);
+        width: 60%;
+        transition: 1s;
+    }
+    .contact-btn a{
+        text-decoration: none;
+        color: azure;
+    }
+    .sign-up{
+        border: none;
+        background-color: rgb(48, 123, 228);
+        color: aliceblue;
+        height: 30px;
+        width: 150px;
+    }
+
+    hr {
+        margin: 15px auto;
+        height: 5px;
+        width: 50%;
+        background-color: skyblue;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+
+    hr:hover {
+        transition: 1s;
+        width: 90%;
+    }
+
+    .container-1 {
+        display: flex;
+        overflow: hidden;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .card-Paragraph {
+        font-size: 1.5rem;
+        font-family: 'Beau Rivage', cursive;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px;
+        background-color: azure;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .fill-up{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fill-up input{
+        margin: 5px;
+        padding: 5px;
+        width: 20%;
+        height: 30px;
+        text-align: center;
+    }
+    .fill-up input:focus{
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+        width: 21%;
+        border: 2px solid skyblue;
+        outline: none;
+    }
+
+    @media (max-width: 700px){
+        .contact-btn:hover{
+            width: 100%;
+        }
+        .container-1{
+            display: flex;
+            flex-direction: column;
+        }
+        #box-1 h1{
+            font-size: xx-large;
+        }
+        #box-1 p{
+            font-size: x-large;
+        }
+        body{
+            background-image: url(/back.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .fill-up input{
+            width: 50%;
+        }
+        .fill-up input:focus{
+            width: 52%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h1>Welcome!</h1>
+            <p>I'm sayem Imran Khan <br>
+                I'm a junior front end designer
+            </p><br>
+            <button class="contact-btn"> <a href="https://www.facebook.com/sayem.somrat" target="_blank">Contact with me</a></button>
+        </div>
+        <div class="box" id="box-2">
+            <img src="/portfolio.jpg" alt="Mohammad Sayem Imran khans Photo">
+        </div>
+    </div>
+    <hr>
+    <div class="container-1">
+        <div class="card" id="card-1">
+            <h2>About me</h2>
+            <p class="card-Paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sed alias ex
+                quas id nihil amet adipisci exercitationem nesciunt numquam nemo totam qui atque, ullam repudiandae
+                dolor ea culpa impedit.</p>
+        </div>
+        <div class="card" id="card-2">
+            <p class="card-Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam culpa ab eveniet
+                quia quibusdam eaque doloribus sunt dolorem laboriosam illum quisquam, enim necessitatibus minus ex
+                recusandae. Tenetur labore vitae nobis.</p>
+        </div>
+        <div class="card" id="card-3">
+            <p class="card-Paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ducimus
+                necessitatibus adipisci quod doloribus! Recusandae debitis ducimus tempora ullam ad, neque corporis
+                dolore, voluptatem iste pariatur, officiis animi ratione illum.</p>
+        </div>
+        <div class="card" id="card-4">
+            <p class="card-Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae
+                incidunt facere distinctio in nostrum unde non tempora, ratione, rem numquam nobis quam, sunt
+                consequatur nesciunt ab illo quaerat quo.</p>
+        </div>
+    </div>
+    <div class="fill-up">
+        <h2>Sign up with your information</h2>
+        <input type="text" placeholder="first name">
+        <input type="text" placeholder="Last name">
+        <input type="number" placeholder="mobile">
+        <input type="email" placeholder="email">
+        <button class="sign-up">Sign Up</button>
+    </div>
+</body>
+
+</html>
